@@ -34,7 +34,6 @@ export class WebSocketServer {
             console.log(message);
             setTimeout(() => {
                 if (message.isBroadcast) {
-    
                     //send back the message to the other clients
                     this.wss.clients
                         .forEach(client => {
